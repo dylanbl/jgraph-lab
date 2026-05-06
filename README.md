@@ -2,6 +2,6 @@ My JGraph lab plots the notes of a specified major scale on top of a guitar fret
 
 My code uses 2 Python scripts to generate JGraph data. `fretboard.py` creates the guitar layout with 12 frets and 6 strings (if curious, only 12 frets are needed because the notes on a guitar repeat after the 12th fret). `scale.py` determines which notes need to be plotted, and plots them as dots on top of the guitar fretboard. These Python files have no dependencies outisde of Python's standard libraries, and ran with no issues using Python3.11 on the Hydra machines. 
 
-Running `sh plot.sh [key]` where key is a capital letter (A-G) or one of these letters followed by a 'b' or '#' to denote a flat or sharp key. For example, 'A#' is the key of A sharp, which is also the key of "Bb" or B flat. 
+Running `sh plot.sh [key]` plots a single scale. `Key` should be a capital letter A-G, or one of these letters followed by a 'b' or '#' to denote a flat or sharp key. For example, 'A#' is the key of A sharp, which is also the key of "Bb" or B flat. 
 
 Running `sh run.sh` calls `plot.sh` 5 times with 5 different keys. For each key, 3 files are output. A .jgr file that conatins the JGraph data, a .eps file that contains raw Postscript, and a .png file showing the JGraph. 
